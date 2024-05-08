@@ -244,7 +244,7 @@
             <b class="b31">+18</b>
             <div class="dla-dorosych31">Dla dorosłych</div>
           </a>
-          <a class="moje-konto63">Moje Konto</a>
+          <a class="moje-konto63" id="myaccount">Moje Konto</a>
         </div>
       </div>
     </div>
@@ -430,6 +430,12 @@
       if (wydawca) {
         wydawca.addEventListener("click", function (e) {
           window.location.href = "./imprint.html";
+        });
+      }
+      var myaccount = document.getElementById("myaccount");
+      if (myaccount) {
+        myaccount.addEventListener("click", function (e) {
+          window.location.href = "./account.html";
         });
       }
       </script>
