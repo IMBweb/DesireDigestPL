@@ -88,7 +88,7 @@
           <b class="b31">+18</b>
           <div class="dla-dorosych31">Dla dorosłych</div>
         </a>
-        <a class="moje-konto63">Moje Konto</a>
+        <a class="moje-konto63" id="myaccount">Moje Konto</a>
       </div>
     </div>
 
@@ -112,7 +112,7 @@
       );
       if (drawerpLAYBOYLOGOHEADER) {
         drawerpLAYBOYLOGOHEADER.addEventListener("click", function (e) {
-          window.location.href = "./m-a-x-i-m-extended.html";
+          window.location.href = "./playboy-extended.html";
         });
       }
       
@@ -122,6 +122,19 @@
           window.location.href = "./homepage-adult1.html";
         });
       }
+      
+
+      var myaccount = document.getElementById(
+        "myaccount"
+      );
+      if (myaccount) {
+        myaccount.addEventListener("click", function (e) {
+          window.location.href = "./account.html";
+        });
+      }
+
+
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
