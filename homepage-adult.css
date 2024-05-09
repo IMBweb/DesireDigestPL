@@ -588,6 +588,7 @@
   height: 21px;
   flex-shrink: 0;
   cursor: pointer;
+  color: inherit;
 }
 .polityka-prywatnoci14 {
   width: 156px;
